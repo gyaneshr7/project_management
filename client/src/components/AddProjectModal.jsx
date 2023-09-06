@@ -76,9 +76,9 @@ const AddProjectModal = () => {
 
                                     <label className="form-label">Status</label>
                                     <select id="status" className="form-select" value={status} onChange={(e) => { setStatus(e.target.value) }}>
-                                        <option> Not Started</option>
-                                        <option> In Progress</option>
-                                        <option> Completed</option>
+                                        <option value='new'> Not Started</option>
+                                        <option value={'progress'}> In Progress</option>
+                                        <option value={'completed'}> Completed</option>
                                     </select>
                                 </div>
 
